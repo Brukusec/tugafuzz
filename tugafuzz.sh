@@ -11,7 +11,7 @@ BRANCO='\033[01;37m'
 
 DOMINIO=$(echo $2 | cut -d\/ -f3)
 # Alterar para o directorio pretendido
-DIRECTORIO='/home/bruku/Documents'
+DIRECTORIO='/home/username'
 
 ffuf -c -w $1 -u $2/FUZZ -o $DIRECTORIO/$DOMINIO-res-pri.csv -of csv
 
